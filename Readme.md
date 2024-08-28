@@ -67,13 +67,13 @@ Overview / title section
 
 ## File Structure
 
-- **Backend Directory (`gweek_talks/backend`):**
+- **Backend Directory (`*/backend`):**
     - `requirements.txt`: Lists all backend dependencies.
     - `constants.py`: Contains model configurations and other constants.
     - `prompt_template_utils.py`: Contains prompt templates.
     - `app.py`: Main file to start the Flask server.
 
-- **Frontend Directory (`gweek_talks/frontend`):**
+- **Frontend Directory (`*/frontend`):**
     - `package.json`: Lists all frontend dependencies.
     - Contains various React components for different functionalities.
 
