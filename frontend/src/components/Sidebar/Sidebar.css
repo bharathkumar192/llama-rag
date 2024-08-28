@@ -1,0 +1,115 @@
+/* Sidebar.css */
+.sidebar {
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 60px;
+  /* background: linear-gradient(180deg, #0f0c29, #302b63, #24243e); */
+  background-color: #7a7adb;
+  background: linear-gradient(315deg, #17174c 0%, #151113 80%);
+
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar.extended {
+  width: 200px;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.toggle-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.toggle-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.toggle-icon::before,
+.toggle-icon::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 2px;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.toggle-icon::before {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.sidebar.extended .toggle-icon {
+  background-color: transparent;
+}
+
+.sidebar.extended .toggle-icon::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.sidebar.extended .toggle-icon::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.link-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.link-text {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.sidebar.extended .link-text {
+  opacity: 1;
+}

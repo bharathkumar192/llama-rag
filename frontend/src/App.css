@@ -1,0 +1,12 @@
+.app-container {
+    display: flex; /* Use flexbox to layout children side by side */
+    min-height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Full width of the viewport */
+    max-height: 100%;
+  }
+  
+  .page-content {
+    flex-grow: 1; /* Allows content area to fill all available space */
+    padding: 20px; /* Add padding if needed */
+  }
+  

@@ -1,0 +1,56 @@
+.customer-summary-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    position: fixed;
+    margin-left:5px;
+  }
+  
+  .customer-card {
+    width: 90%; /* Responsive width */
+    background: linear-gradient(145deg, #e6e9f0, #ffffff); /* Soft gradient background */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .customer-card:hover {
+    transform: translateY(-10px); /* More pronounced hover effect */
+  }
+  
+  .customer-card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+  }
+  
+  .customer-name {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .customer-company {
+    font-size: 16px;
+    color: #666;
+    font-style: italic;
+  }
+  
+  .customer-date {
+    font-size: 16px;
+    color: #888;
+  }
+  
+  .customer-summary {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    border-left: 4px solid #4b90ff;
+    padding-left: 30px;
+    background: rgba(75, 144, 255, 0.05); /* Very subtle blue background */
+  }
+  

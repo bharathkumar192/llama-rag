@@ -1,0 +1,179 @@
+.main {
+    flex: 1;
+    min-height: 100vh;
+    padding-bottom: 15vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    padding: 20px;
+    color: #585858;
+  }
+  
+  .main .nav img {
+    width: 40px;
+    border-radius: 50%;
+  }
+  
+  .main-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .main .greet {
+    margin: 10px 0px;
+    font-size: 56px;
+    color: #c4c7c5;
+    font-weight: 500;
+  }
+  
+  .main .greet span {
+    background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .main .cards,
+  .file-details,
+  .file-preview-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+  }
+  
+  .main .card,
+  .file-preview {
+    height: 100px;
+    padding: 15px;
+    background-color: #f0f4f9;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .main .card img,
+  .file-preview img {
+    width: 35px;
+    padding: 5px;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .main .card p,
+  .file-preview p {
+    color: #585858;
+    font-size: 15px;
+  }
+  
+  .main .card:hover,
+  .file-preview:hover {
+    background-color: #dfe4ea;
+  }
+  
+  .main-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #f0f4f9;
+    padding: 10px 20px;
+    border-radius: 50px;
+  }
+  
+  .search-box img {
+    width: 24px;
+    cursor: pointer;
+  }
+  
+  .search-box input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .search-box div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .main .bottom-info {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 300;
+    color: #c4c7c5;
+    margin: 15px auto;
+  }
+  
+  .file-input {
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .file-details h3,
+  .file-preview-container h3 {
+    color: #585858;
+    padding: 10px 0;
+  }
+  
+  .file-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .file-details li {
+    background-color: #f0f4f9;
+    padding: 10px;
+    border-radius: 5px;
+    color: #585858;
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 600px) {
+    .main-bottom input {
+      width: 150px;
+    }
+    .main-bottom img {
+      width: 20px;
+    }
+    .search-box {
+      padding: 5px 10px;
+    }
+    .search-box div {
+      gap: 5px;
+    }
+  }
+  
+
+  /* Example CSS for custom styling */
+.fileinput .file-preview-frame {
+  margin: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
+  padding: 4px;
+  float: left;
+  width: 200px;
+  height: 200px;
+}
